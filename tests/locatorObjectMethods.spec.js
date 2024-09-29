@@ -25,7 +25,6 @@ test.describe('Group1', () => {
 
     test('selectOption()', async ({page}) => {
         await page.locator("text ='Dropdown'").click();
-        await page.waitForTimeout(3000);
         let simpleDropdown = page.locator("//select[@id='dropdown']");
         //select by value OR visible text
         //await simpleDropdown.selectOption("1");
